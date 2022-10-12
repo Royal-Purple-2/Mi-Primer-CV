@@ -1,0 +1,140 @@
+/* ---------
+global styles
+----------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap");
+
+:root {
+  --color-primario: #28664d;
+  --color-complementario-vino: #662841;
+  --color-complementario-azul: #283566;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primario);
+  font-family: "Prompt", sans-serif;
+}
+
+* li {
+  list-style-type: none;
+  line-height: 1.5rem;
+}
+
+/* ---------
+styles
+----------- */
+.contenedor-principal {
+  display: grid;
+  grid-template: 3fr / 40% 60%;
+  grid-row-gap: 30px;
+  grid-column-gap: 60px;
+  justify-content: space-between;
+  font-size: 400;
+  color: whitesmoke;
+}
+
+.seccion-principal {
+  margin-left: 50px;
+  grid-area: 1 / 1;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-content: center;
+}
+a {
+  color: greenyellow;
+}
+
+a:hover {
+  color: aqua;
+}
+
+a:checked {
+  color: red;
+}
+
+.image-profile {
+  grid-row: 2;
+  grid-column: 2;
+  border-radius: 10px;
+}
+
+.imagen-pesca {
+  /* margin-left: 400px; */
+  margin-top: 300px;
+  grid-row: 2;
+  grid-column: 2;
+  border-radius: 10px;
+}
+#sub-title {
+  font-size: 600;
+}
+
+.hobbies {
+  min-width: 370px;
+  min-height: 370px;
+  grid-area: 2 / 1;
+  width: 20rem;
+  height: 20rem;
+  background-color: #662841;
+  padding: 50px;
+  margin: 100px;
+  border-radius: 10px;
+}
+.hobbies img,
+h3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.left-container {
+  min-height: 433px;
+  min-width: 700px;
+  grid-area: 3 / 1;
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 30rem;
+  background-color: #283566;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* justify-content: space-around; */
+  /* margin-bottom: 40px; */
+  border-radius: 10px;
+}
+
+.right-container {
+  grid-area: 3 / 2;
+  min-width: 700px;
+  min-height: 433px;
+  max-width: 30rem;
+  background-color: #283566;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+#github-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: aliceblue;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+#outlook {
+  width: 2.5rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--color-complementario-azul);
+}
+
+#comunicate {
+  margin-top: 1.5rem;
+}
